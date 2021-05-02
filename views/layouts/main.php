@@ -52,7 +52,8 @@ AppAsset::register($this);
                 )
                 . Html::endForm()
                 . '</li>'
-            )
+                ),
+            ['label' => 'Clientes', 'url' => ['site/customer']]
         ],
     ]);
     NavBar::end();

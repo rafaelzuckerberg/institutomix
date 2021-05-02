@@ -125,4 +125,19 @@ class SiteController extends Controller
     {
         return $this->render('about');
     }
+
+
+    /**
+     * Displays about page.
+     *
+     * @return string
+     */
+    public function actionCustomer()
+    {
+        $customers = [
+            [ 'id' => 1, 'name' => 'Rafael Moura']
+        ];
+        return $this->render('customer');
+    }
+
 }
